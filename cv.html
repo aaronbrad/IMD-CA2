@@ -4,7 +4,8 @@
         <title>Aaron Bradshaw CV</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
@@ -34,6 +35,40 @@
           h1 {
               color: blue;
           }
+
+		  input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 		  
 		  
 
@@ -48,7 +83,7 @@
 <body>
 
 	<div class="container-fluid" style="border: 3px solid">
-		<nav class="navbar navbar-inverse" style="position: fixed; width: 97%">
+		<nav class="navbar navbar-inverse " style="position: fixed; width: 97%">
 			<div class="navbar-header">
 			  <a class="navbar-brand" href="#">Aaron Bradshaw</a>
 			</div>
@@ -59,10 +94,12 @@
 
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#workExp">Work Experience</a></li>
-				<li><a href="#Hobbies & Interests">Hobbies & Interests</a></li>
+				<li><a href="#Hobbies & Acheivements">Hobbies & Acheivements</a></li>
+				<li><a href="#contactMe">Contact Me</a></li>
 			</ul>
-		</nav>
 		
+		</nav>
+	</div>
 		<header>
 			<br><br>
 			<div class="container">
@@ -293,7 +330,7 @@
 				
 			</div>
 			
-			<div id="Hobbies & Interests">
+			<div id="Hobbies & Acheivements">
 				<h1>Hobbies & Achievements</h1>
 				<h3><b>Hobbies</b></h3>
 				<ul>
@@ -308,15 +345,42 @@
 					<li>Leinster A Championship with St Benildus College</li>
 					<li>Division 2 Senior League Title with Ballinteer St Johns</li>
 				  </ul>
-				  <br><br><br>
+				  <br><br><br><br>
+
 			</div>
+			<div id="contactMe">
+				<h1>Contact Me</h1>
+				<br><br>
+			<div class="container">
+				<form action="action_page.php">
+			  
+				  <label for="fname">First Name</label>
+				  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+			  
+				  <label for="lname">Last Name</label>
+				  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			  
+				  <label for="country">Country</label>
+				  <select id="country" name="country">
+					<option value="australia">Ireland</option>
+					<option value="canada">UK</option>
+					<option value="usa">USA</option>
+				  </select>
+			  
+				  <label for="subject">Subject</label>
+				  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			  
+				  <input type="submit" value="Submit">
+			  
+				</form>
+			  </div>
 			
-			
-			 <!-- Modal -->
+			</div>
+			 
 			  <div class="modal fade" id="myModal" role="dialog">
 				<div class="modal-dialog">
 				
-				  <!-- Modal content-->
+				  
 				  <div class="modal-content">
 					<div class="modal-header">
 					  <button type="button" class="close" data-dismiss="modal">×</button>
